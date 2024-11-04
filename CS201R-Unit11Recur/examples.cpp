@@ -155,21 +155,43 @@ node* newNode(int d) {
 
 //Only review the following if there is time
 //geeksforgeeks tree traversal (preOrder)
+//this is one example of a depth first search (DFS)
 
 void printPreOrder(struct node* n) {
     if (n == nullptr)
         return;
-
-    printPreOrder(n->left);    //traverse left side
-
-    printPreOrder(n->right); //traverse right side
     //print node data
     cout << n->data << " ";
-
+    printPreOrder(n->left);  //traverse left side
+    printPreOrder(n->right); //traverse right side
 }
 
+//Only review the following if there is time
+//geeksforgeeks tree traversal (postOrder)
+//this is also an example of a depth first search (DFS)
 
+void printPostOrder(struct node* n) {
+    if (n == nullptr)
+        return;
 
+    printPostOrder(n->left);  //traverse left side
+    printPostOrder(n->right); //traverse right side
+    //print node data
+    cout << n->data << " ";
+}
+//Only review the following if there is time
+//geeksforgeeks tree traversal (postOrder)
+//this is also an example of a depth first search (DFS)
+
+void printInOrder(struct node* n) {
+    if (n == nullptr)
+        return;
+
+    printInOrder(n->left);  //traverse left side
+    //print node data
+    cout << n->data << " ";
+    printInOrder(n->right); //traverse right side
+}
 void printBinaryTree() {
     //create 'tree'
     //         1
@@ -181,7 +203,12 @@ void printBinaryTree() {
     root->left->left = newNode(4);
     root->left->right = newNode(5);
     root->right->right = newNode(6);
+    cout << "\nBinary Tree: PreOrder\n";
     printPreOrder(root);
+    cout << "\nBinary Tree: PostOrder\n";
+    printPostOrder(root);
+    cout << "\nBinary Tree: InOrder\n";
+    printInOrder(root);
 }
 
 void printVector(vector<string> s) {

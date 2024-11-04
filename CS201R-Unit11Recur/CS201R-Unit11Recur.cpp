@@ -58,11 +58,11 @@ int main()
     cout << "\n\nYOU DO THIS PART2: BUNNY EARS\n\t";
     cout << bunnyPart2(5) << endl;
     */
-    /*
+   
     cout << "\n\nBinary Trees\n";
     printBinaryTree();
 
-
+    /*
     cout << "\n\nPERMUTATIONS 1\n";
     vector<string> wordList = {"A", "B", "C"};
     permute1(wordList, 0, 2);
