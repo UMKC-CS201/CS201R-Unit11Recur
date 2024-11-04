@@ -1,6 +1,8 @@
 // CS201R-Unit11Recur.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+//https://github.com/UMKC-CS201/CS201R-Unit11Recur
+
 #include  "examples.h"
  
 using namespace std;
@@ -44,8 +46,10 @@ int main()
     cout << gcd2(153200,90,0)<< endl;
 
     //YOUR TURN
+
     //output the number of bunny ears using recursion
     //NO LOOPS OR MULTIPLICATION CAN BE USED
+    cout << "\n\nExample 10: Bunny Ears Part 1\n";
     cout << "\n\nYOU DO THIS PART1: BUNNY EARS\n\t";
     cout << bunnyPart1(15) << endl;
 
@@ -55,15 +59,18 @@ int main()
     //The odd bunnies (1, 3, ..) we'll say have 3 ears
     //Recursively return the number of "ears" in the
     //bunny line without loops or multiplication
+    cout << "\n\nExample 11: Bunny Ears Part 2\n";
     cout << "\n\nYOU DO THIS PART2: BUNNY EARS\n\t";
     cout << bunnyPart2(5) << endl;
     */
-   
-    cout << "\n\nBinary Trees\n";
-    printBinaryTree();
 
     /*
-    cout << "\n\nPERMUTATIONS 1\n";
+    cout << "\n\nExample 12: Print Binary Trees\n";
+    printBinaryTree();
+
+    */
+    /*
+    cout << "\n\nExample 13: PERMUTATIONS 1\n";
     vector<string> wordList = {"A", "B", "C"};
     permute1(wordList, 0, 2);
     cout << endl << endl << endl;
